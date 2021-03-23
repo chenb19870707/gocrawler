@@ -1,8 +1,8 @@
 package parse
 
 import (
-	"crawler/engine"
-	"crawler/model"
+	"gocrawler/engine"
+	"gocrawler/model"
 	"regexp"
 	"strconv"
 	"strings"

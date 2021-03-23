@@ -1,6 +1,6 @@
 package screduler
 
-import "crawler/engine"
+import "gocrawler/engine"
 
 type SimpleScheduler struct {
 	wokerChan chan engine.Request

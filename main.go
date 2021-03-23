@@ -1,9 +1,9 @@
 package main
 
 import (
-	"crawler/engine"
-	"crawler/parse"
-	"crawler/screduler"
+	"gocrawler/engine"
+	"gocrawler/parse"
+	"gocrawler/screduler"
 )
 
 func main()  {
