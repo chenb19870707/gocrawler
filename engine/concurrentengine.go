@@ -12,20 +12,19 @@ type ConcurrentEngine struct {
 }
 
 func (e *ConcurrentEngine) Run(seeds...Request)  {
-	in := make(chan Request)
 	out := make(chan ParseResult)
 
-	e.Scheduler.ConfigureWorkChan(in)
+	e.Scheduler.Run()
 
 	for i := 0;i<e.WorkerCount;i++{
-		CreateWoker(in,out)
+		CreateWoker(out,e.Scheduler)
 	}
 
 	for _,r := range seeds{
 		e.Scheduler.Submit(r)
 	}
 
-	itemCount := 0;
+	itemCount := 0
 	for{
 		result := <-out
 		for _,item := range result.Items{
@@ -39,9 +38,11 @@ func (e *ConcurrentEngine) Run(seeds...Request)  {
 	}
 }
 
-func CreateWoker(in chan Request,out chan ParseResult)  {
+func CreateWoker(out chan ParseResult,s Scheduler)  {
+	in := make(chan Request)
 	go func() {
 		for  {
+			s.WorkReady(in)
 			request := <-in
 
 			result,err := woker(request)

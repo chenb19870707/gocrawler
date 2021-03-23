@@ -24,6 +24,8 @@ func (s *QueueScheduler) Run()  {
 	var requestQ []engine.Request;
 	var workQ []chan engine.Request
 
+	s.workerChan = make(chan  chan engine.Request)
+	s.requestChan = make(chan engine.Request)
 	go func() {
 		for  {
 			var activeRequest engine.Request
