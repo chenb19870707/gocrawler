@@ -8,7 +8,7 @@ import (
 
 func main()  {
 	e := engine.ConcurrentEngine{
-		&screduler.QueueScheduler{},
+		&screduler.SimpleScheduler{},
 		100,
 	}
 

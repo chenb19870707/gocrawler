@@ -12,6 +12,15 @@ func (s *SimpleScheduler) Submit(request engine.Request)  {
 	}()
 }
 
-func (s *SimpleScheduler) ConfigureWorkChan(c chan engine.Request)  {
-	s.wokerChan = c
+func (s *SimpleScheduler) Run()  {
+	s.wokerChan = make(chan engine.Request)
 }
+
+func (s *SimpleScheduler) WorkChan() chan engine.Request{
+	return s.wokerChan
+}
+
+func (s *SimpleScheduler) WorkReady(w chan engine.Request){
+	return
+}
+

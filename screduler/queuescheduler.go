@@ -48,3 +48,7 @@ func (s *QueueScheduler) Run()  {
 		}
 	}()
 }
+
+func (s *QueueScheduler)WorkChan() chan engine.Request {
+	return make(chan engine.Request)
+}
