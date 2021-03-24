@@ -17,7 +17,7 @@ func (e *ConcurrentEngine) Run(seeds...Request)  {
 	e.Scheduler.Run()
 
 	for i := 0;i<e.WorkerCount;i++{
-		CreateWoker(out,e.Scheduler)
+		CreateWoker(e.Scheduler.WorkChan(),out,e.Scheduler)
 	}
 
 	for _,r := range seeds{
@@ -38,8 +38,7 @@ func (e *ConcurrentEngine) Run(seeds...Request)  {
 	}
 }
 
-func CreateWoker(out chan ParseResult,s Scheduler)  {
-	in := make(chan Request)
+func CreateWoker(in chan Request,out chan ParseResult,s Scheduler)  {
 	go func() {
 		for  {
 			s.WorkReady(in)

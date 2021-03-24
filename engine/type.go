@@ -17,7 +17,7 @@ func NilParse([] byte) ParseResult {
 
 type Scheduler interface {
 	Submit(request Request)
-	ConfigureWorkChan(chan Request)
 	Run()
 	WorkReady(w chan Request)
+	WorkChan() chan Request
 }
