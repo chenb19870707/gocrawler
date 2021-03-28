@@ -19,7 +19,7 @@ func (s SimpleEngine)Run(seeds... Request)  {
 	for len(requests) > 0{
 		r := requests[0]
 		requests = requests[1:]
-		log.Printf("fetch url:%s",r.Url)
+		//log.Printf("fetch url:%s",r.Url)
 		body,err := fetcher.Fetch(r.Url)
 
 		if err != nil{

@@ -1,7 +1,6 @@
 package engine
 
 import (
-	"fmt"
 	"gocrawler/fetcher"
 	"log"
 )
@@ -9,6 +8,7 @@ import (
 type ConcurrentEngine struct {
 	Scheduler Scheduler
 	WorkerCount int
+	ItemChan chan interface{}
 }
 
 func (e *ConcurrentEngine) Run(seeds...Request)  {
@@ -24,12 +24,12 @@ func (e *ConcurrentEngine) Run(seeds...Request)  {
 		e.Scheduler.Submit(r)
 	}
 
-	itemCount := 0
 	for{
 		result := <-out
 		for _,item := range result.Items{
-			fmt.Printf("Got Item:%d,%v\n",itemCount,item)
-			itemCount++
+			go func() {
+				e.ItemChan <- item
+			}()
 		}
 
 		for _,request := range result.Requests{
@@ -55,9 +55,9 @@ func CreateWoker(in chan Request,out chan ParseResult,s Scheduler)  {
 }
 
 func woker(request Request) (ParseResult, error) {
-	fmt.Printf("Fecth url %s\n",request.Url)
+	//fmt.Printf("Fecth url %s\n",request.Url)
 
-	body,err := fetcher.Fetch(request.Url)
+	body,err := fetcher.ProxyFetch(request.Url)
 	if err!=nil{
 		log.Printf("feth error:%s",err)
 		return ParseResult{},err
