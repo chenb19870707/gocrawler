@@ -1,24 +1,12 @@
 package main
 
 import (
-	"gocrawler/engine"
-	"gocrawler/parse"
-	"gocrawler/persist"
-	"gocrawler/screduler"
+	"gocrawler/craw_distribute/rpcsupport"
+	"gocrawler/craw_distribute/work/server"
+	"log"
 )
 
 func main()  {
-	e := engine.ConcurrentEngine{
-		&screduler.SimpleScheduler{},
-		100,
-		persist.ItemSave(),
-	}
-
-	e.Run(engine.Request{
-		"https://book.douban.com/",
-		parse.ParseTag,
-		//"http://www.zhenai.com/zhenghun",
-		//zhenai.ParseCity,
-	})
+	log.Fatal(rpcsupport.ServerRpc(":1235",&server.CrawlService{}))
 }
 

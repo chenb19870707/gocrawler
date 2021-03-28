@@ -6,7 +6,7 @@ import (
 )
 
 const regexStr = `<a href="([^"]+)" class="tag">([^"]+)</a>`
-func ParseTag(content []byte)  engine.ParseResult{
+func ParseTag(content []byte,_ string)  engine.ParseResult{
 	re,_ := regexp.Compile(regexStr)
 
 	match := re.FindAllSubmatch(content,-1)
@@ -17,7 +17,7 @@ func ParseTag(content []byte)  engine.ParseResult{
 		result.Items = append(result.Items,m[2])
 		result.Requests = append(result.Requests,engine.Request{
 			"https://book.douban.com" + string(m[1]),
-			ParseBookList,
+			engine.NewFuncparse(ParseTag,"ParseTag"),
 		})
 	}
 

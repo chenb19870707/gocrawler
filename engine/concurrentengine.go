@@ -5,10 +5,14 @@ import (
 	"log"
 )
 
+
+type Processor func( Request) (ParseResult,error)
+
 type ConcurrentEngine struct {
 	Scheduler Scheduler
 	WorkerCount int
 	ItemChan chan interface{}
+	RequestProcessor Processor
 }
 
 func (e *ConcurrentEngine) Run(seeds...Request)  {
@@ -17,7 +21,7 @@ func (e *ConcurrentEngine) Run(seeds...Request)  {
 	e.Scheduler.Run()
 
 	for i := 0;i<e.WorkerCount;i++{
-		CreateWoker(e.Scheduler.WorkChan(),out,e.Scheduler)
+		e.CreateWoker(e.Scheduler.WorkChan(),out,e.Scheduler)
 	}
 
 	for _,r := range seeds{
@@ -38,13 +42,13 @@ func (e *ConcurrentEngine) Run(seeds...Request)  {
 	}
 }
 
-func CreateWoker(in chan Request,out chan ParseResult,s Scheduler)  {
+func (e *ConcurrentEngine)CreateWoker(in chan Request,out chan ParseResult,s Scheduler)  {
 	go func() {
 		for  {
 			s.WorkReady(in)
 			request := <-in
 
-			result,err := woker(request)
+			result,err := e.RequestProcessor(request)
 			if err != nil{
 				continue
 			}
@@ -54,7 +58,7 @@ func CreateWoker(in chan Request,out chan ParseResult,s Scheduler)  {
 	}()
 }
 
-func woker(request Request) (ParseResult, error) {
+func Worker(request Request) (ParseResult, error) {
 	//fmt.Printf("Fecth url %s\n",request.Url)
 
 	body,err := fetcher.ProxyFetch(request.Url)
@@ -63,5 +67,5 @@ func woker(request Request) (ParseResult, error) {
 		return ParseResult{},err
 	}
 
-	return request.ParseFnc(body),nil
+	return request.Parse.Parse(body,request.Url),nil
 }

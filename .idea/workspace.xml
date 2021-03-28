@@ -3,96 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="3d6fa88a-c312-4950-9e99-fee83faaf729" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/craw_distribute/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/craw_distribute/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/concurrentengine.go" beforeDir="false" afterPath="$PROJECT_DIR$/engine/concurrentengine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/simpleengine.go" beforeDir="false" afterPath="$PROJECT_DIR$/engine/simpleengine.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/type.go" beforeDir="false" afterPath="$PROJECT_DIR$/engine/type.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screduler/queuescheduler.go" beforeDir="false" afterPath="$PROJECT_DIR$/screduler/queuescheduler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screduler/simplescheduler.go" beforeDir="false" afterPath="$PROJECT_DIR$/screduler/simplescheduler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parse/parsetag.go" beforeDir="false" afterPath="$PROJECT_DIR$/parse/parsetag.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parse/zhenai/ParseProfile.go" beforeDir="false" afterPath="$PROJECT_DIR$/parse/zhenai/ParseProfile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parse/zhenai/parseCity.go" beforeDir="false" afterPath="$PROJECT_DIR$/parse/zhenai/parseCity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parse/zhenai/parseCityList.go" beforeDir="false" afterPath="$PROJECT_DIR$/parse/zhenai/parseCityList.go" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-              <folding>
-                <element signature="e#14#86#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine/concurrentengine.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/screduler/simplescheduler.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/screduler/queuescheduler.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-808">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine/type.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parse/booklist.go">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parse/parsebookdetail.go">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parse/parsetag.go">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fetcher/fetch.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="e#17#215#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -101,65 +25,14 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.14.5/libexec" />
+  <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/screduler/queuescheduler.go" />
-        <option value="$PROJECT_DIR$/engine/type.go" />
-        <option value="$PROJECT_DIR$/engine/concurrentengine.go" />
-        <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/screduler/simplescheduler.go" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response43.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1q34fQO6HqoNkMxFNx1cQ3hmVxd" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="gocrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gocrawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gocrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gocrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gocrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gocrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="fetcher" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gocrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gocrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="parse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gocrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gocrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="screduler" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -179,84 +52,128 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/craw_distribute/work" />
+      <recent name="$PROJECT_DIR$/craw_distribute" />
+      <recent name="$PROJECT_DIR$/craw_distribute/server" />
+      <recent name="$PROJECT_DIR$/craw_distribute/persist" />
+      <recent name="$PROJECT_DIR$/rpc/client" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9200" />
+          <option name="urlPath" value="dating_profile/zhihu/_search" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9200" />
+          <option name="urlPath" value="dating_profile/douban/_search" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
-    <configuration name="go build crawler" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build gocrawler/craw_distribute">
+    <configuration name="go build gocrawler" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="crawler" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="crawler" />
+      <package value="gocrawler" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build crawler/regex" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build gocrawler/craw_distribute" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="crawler" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/regex/main.go" />
-      <package value="crawler/regex" />
+      <filePath value="$PROJECT_DIR$/craw_distribute/main.go" />
+      <package value="gocrawler/craw_distribute" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gocrawler" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+    <configuration name="go build gocrawler/craw_distribute/server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="crawler" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/craw_distribute/server/main.go" />
+      <package value="gocrawler/craw_distribute/server" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gocrawler/rpc/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="crawler" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/rpc/client/client.go" />
+      <package value="gocrawler/rpc/client" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gocrawler/rpc/server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="crawler" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/rpc/server/server.go" />
+      <package value="gocrawler/rpc/server" />
+      <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Build.go build crawler" />
-        <item itemvalue="Go Build.go build crawler/regex" />
+        <item itemvalue="Go Build.go build gocrawler/craw_distribute" />
+        <item itemvalue="Go Build.go build gocrawler/craw_distribute/server" />
+        <item itemvalue="Go Build.go build gocrawler" />
+        <item itemvalue="Go Build.go build gocrawler/rpc/client" />
+        <item itemvalue="Go Build.go build gocrawler/rpc/server" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21778488" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32908705" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31187123" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1040" y="671" key="#GOROOT" timestamp="1616551112062">
+      <screen x="-1634" y="212" width="1634" height="1050" />
+    </state>
+    <state x="-1040" y="671" key="#GOROOT/0.25.2560.1415/-1634.212.1634.1050@-1634.212.1634.1050" timestamp="1616551112062" />
     <state x="-1040" y="362" key="#Go_Modules" timestamp="1616297807431">
       <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
@@ -265,120 +182,78 @@
       <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
     <state width="602" height="466" key="DebuggerActiveHint/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616335930016" />
-    <state width="1638" height="308" key="GridCell.Tab.0.bottom" timestamp="1616465973383">
-      <screen x="-1680" y="212" width="1680" height="1050" />
+    <state width="1638" height="308" key="GridCell.Tab.0.bottom" timestamp="1616941301268">
+      <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616373529879" />
-    <state width="1638" height="308" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616465973383" />
-    <state width="1638" height="308" key="GridCell.Tab.0.center" timestamp="1616465973381">
-      <screen x="-1680" y="212" width="1680" height="1050" />
+    <state width="1638" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616941301268" />
+    <state width="1638" height="308" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616551900422" />
+    <state width="1638" height="308" key="GridCell.Tab.0.bottom/0.25.1920.1055/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616913505008" />
+    <state width="1638" height="308" key="GridCell.Tab.0.center" timestamp="1616941301267">
+      <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="308" key="GridCell.Tab.0.center/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616373529878" />
-    <state width="1638" height="308" key="GridCell.Tab.0.center/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616465973381" />
-    <state width="1638" height="308" key="GridCell.Tab.0.left" timestamp="1616465973381">
-      <screen x="-1680" y="212" width="1680" height="1050" />
+    <state width="1638" height="308" key="GridCell.Tab.0.center/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616941301267" />
+    <state width="1638" height="308" key="GridCell.Tab.0.center/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616551900421" />
+    <state width="1638" height="308" key="GridCell.Tab.0.center/0.25.1920.1055/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616913505007" />
+    <state width="1638" height="308" key="GridCell.Tab.0.left" timestamp="1616941301266">
+      <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="308" key="GridCell.Tab.0.left/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616373529877" />
-    <state width="1638" height="308" key="GridCell.Tab.0.left/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616465973381" />
-    <state width="1638" height="308" key="GridCell.Tab.0.right" timestamp="1616465973382">
-      <screen x="-1680" y="212" width="1680" height="1050" />
+    <state width="1638" height="308" key="GridCell.Tab.0.left/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616941301266" />
+    <state width="1638" height="308" key="GridCell.Tab.0.left/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616551900420" />
+    <state width="1638" height="308" key="GridCell.Tab.0.left/0.25.1920.1055/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616913505006" />
+    <state width="1638" height="308" key="GridCell.Tab.0.right" timestamp="1616941301267">
+      <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="308" key="GridCell.Tab.0.right/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616373529879" />
-    <state width="1638" height="308" key="GridCell.Tab.0.right/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616465973382" />
-    <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1616379731301">
-      <screen x="-1680" y="212" width="1680" height="1050" />
+    <state width="1638" height="308" key="GridCell.Tab.0.right/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616941301267" />
+    <state width="1638" height="308" key="GridCell.Tab.0.right/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616551900422" />
+    <state width="1638" height="308" key="GridCell.Tab.0.right/0.25.1920.1055/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616913505007" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1616941293432">
+      <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616336174229" />
-    <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616379731301" />
-    <state width="1638" height="364" key="GridCell.Tab.1.center" timestamp="1616379731300">
-      <screen x="-1680" y="212" width="1680" height="1050" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616941293432" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616551089147" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center" timestamp="1616941293429">
+      <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="364" key="GridCell.Tab.1.center/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616336174228" />
-    <state width="1638" height="364" key="GridCell.Tab.1.center/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616379731300" />
-    <state width="1638" height="364" key="GridCell.Tab.1.left" timestamp="1616379731299">
-      <screen x="-1680" y="212" width="1680" height="1050" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616941293429" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616551089146" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left" timestamp="1616941293428">
+      <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="364" key="GridCell.Tab.1.left/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616336174227" />
-    <state width="1638" height="364" key="GridCell.Tab.1.left/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616379731299" />
-    <state width="1638" height="364" key="GridCell.Tab.1.right" timestamp="1616379731300">
-      <screen x="-1680" y="212" width="1680" height="1050" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616941293428" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616551089145" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right" timestamp="1616941293430">
+      <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="364" key="GridCell.Tab.1.right/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616336174228" />
-    <state width="1638" height="364" key="GridCell.Tab.1.right/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616379731300" />
-    <state x="-1331" y="161" key="SettingsEditor" timestamp="1616372758864">
+    <state width="1638" height="364" key="GridCell.Tab.1.right/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616941293430" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616551089146" />
+    <state x="-1331" y="161" key="SettingsEditor" timestamp="1616913489212">
       <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
     <state x="-1331" y="161" key="SettingsEditor/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616372758864" />
+    <state x="-1331" y="161" key="SettingsEditor/0.25.1920.1055/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616913489212" />
     <state x="-1289" y="258" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1616298490555">
       <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
     <state x="-1289" y="258" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616298490555" />
-    <state x="-1139" y="168" width="598" height="714" key="find.popup" timestamp="1616335004398">
+    <state x="-1139" y="168" width="598" height="714" key="find.popup" timestamp="1616941223920">
       <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
-    <state x="-1139" y="168" width="598" height="714" key="find.popup/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616335004398" />
-    <state x="-1175" y="445" width="670" height="676" key="search.everywhere.popup" timestamp="1616465538470">
-      <screen x="-1680" y="212" width="1680" height="1050" />
+    <state x="-1139" y="168" width="598" height="714" key="find.popup/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616941223920" />
+    <state x="-1175" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1616940120223">
+      <screen x="-1680" y="0" width="1680" height="1050" />
     </state>
+    <state x="-1175" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080/-1680.0.1680.1050@-1680.0.1680.1050" timestamp="1616940120223" />
     <state x="-1175" y="445" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440/-1680.212.1680.1050@-1680.212.1680.1050" timestamp="1616465538470" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/parse/booklist.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parse/parsebookdetail.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parse/parsetag.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fetcher/fetch.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="e#17#215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screduler/queuescheduler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-808">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine/concurrentengine.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="e#14#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine/type.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screduler/simplescheduler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/parse/zhenai/parseCity.go</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

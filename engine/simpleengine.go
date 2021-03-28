@@ -25,7 +25,7 @@ func (s SimpleEngine)Run(seeds... Request)  {
 		if err != nil{
 			log.Printf("Fecth Error %s",r.Url)
 		}
-		parseResult :=	r.ParseFnc(body)
+		parseResult :=	r.Parse.Parse(body,r.Url)
 
 		requests = append(requests,parseResult.Requests...)
 		for _,item := range parseResult.Items{
